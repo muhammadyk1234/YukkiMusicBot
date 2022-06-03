@@ -17,18 +17,18 @@ from pyrogram import filters
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "12396073"))
+API_HASH = getenv("API_HASH", "5af45cda30f38141da6e3d01ff06adb8")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "5221077999:AAEoS8CIISzfLq4mWWMnR7M9bhwiDer7bwY")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Muhammadyk:Muhammadyekini@cluster0.youh6.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
-    getenv("DURATION_LIMIT", "60")
+    getenv("DURATION_LIMIT", "200")
 )  # Remember to give value in Minutes
 
 # Duration Limit for downloading Songs in MP3 or MP4 format from bot
@@ -37,26 +37,26 @@ SONG_DOWNLOAD_DURATION = int(
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001650210430"))
 
 # A name for your Music bot.
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "MOBI_Play ")
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "").split())
+    map(int, getenv("OWNER_ID", "1792398260").split())
 )  # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
-HEROKU_API_KEY = getenv("HEROKU_API_KEY")
+HEROKU_API_KEY = getenv("HEROKU_API_KEY", "b4eb09a7-79b0-40c0-a1fa-1b22956a16d9")
 
 # You have to Enter the app name which you gave to identify your  Music Bot in Heroku.
-HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
+HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", "mobi-musicbot")
 
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/TeamYukki/YukkiMusicBot",
+    "https://github.com/muhammadyk1234/YukkiMusicBot.git",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -72,7 +72,7 @@ SUPPORT_GROUP = getenv(
 )  # Example:- https://t.me/YukkiSupport
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
-AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", None)
+AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", False)
 
 # Time after which you're assistant account will leave chats automatically.
 AUTO_LEAVE_ASSISTANT_TIME = int(
@@ -117,7 +117,7 @@ PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "25"))
 
 # Cleanmode time after which bot will delete its old messages from chats
 CLEANMODE_DELETE_MINS = int(
-    getenv("CLEANMODE_MINS", "5")
+    getenv("CLEANMODE_MINS", "1")
 )  # Remember to give value in Seconds
 
 
@@ -135,8 +135,8 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", None)
-STRING2 = getenv("STRING_SESSION2", None)
+STRING1 = getenv("STRING_SESSION", "BAAF0D6-5vLEFdtfzHSkmo7WDqrRQijhk1bqQvV4wKzY0m6RZesRQgP1cqVyyNXKGvsidS9RZ-_XnE7wBWc_tNWTZ4m4l_JQOGOS2vBbWu2BURoKp0BOUcP1zGsxfXGin2p97_veCV_i9kMnmrAOQFRZMnuqUxk6BxWBWCHHnjrlmy7XswONx3QRuHhcsfg8fk-xG6O7IcGMRndap1pQtBj19cuR6BECNwGtxEJ7A8IDjb1U8AjPhGDwfqWIk7rabTwKyTaMyKIcYdq4aHqcYfS_-6-LfgNDryvsBTibP3t3wzsg1YEfzDho9s5-Vp_kITlgujYkUMEdabeKLEdePVEnAAAAATcJe5oA")
+STRING2 = getenv("STRING_SESSION2", "BABnnW37jG25r1BkDTp3rWvcfTfIQaZMPqv1_IFlzuUNdQCpc43O0ymtOtw86REgNVUO-dibsjoXT1kWxDQX-nyrz6GRFc8n3wtUNNV3ecR8_6zVXvSgk_dkUm_XbBOZ_uVdrcDkNOSKsKZBtB1E05qLsiC9ijI0OdYXvX1mbOrbrgh3SvqR0-S96qQyZYtp_d9oM9F9ffeifW7XpaaRqJ6j5LXhgS6CTpABbLGb7WxfEeB_5mnDo07FZA7z3LOUKTtwAmevhpqKv1HwfZBS4MvJU-0JG4PcY2mMw_SL1JTJo-nvqXcaCunT_WKKEr_q9nzdaBvKnmTblFVRZVAf0lWEM-bgjwA")
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
@@ -165,7 +165,7 @@ autoclean = []
 
 
 # Images
-START_IMG_URL = getenv("START_IMG_URL", None)
+START_IMG_URL = getenv("START_IMG_URL", "assets/mobi.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
